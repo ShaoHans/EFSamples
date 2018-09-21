@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27924.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.数据库表的创建和迁移", "2.数据库表的创建和迁移", "{E4C42A05-9DBB-47B9-A484-28F0165B7DFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1.数据库连接和初始化策略", "2.数据库表的创建和迁移\2.1.数据库连接和初始化策略\2.1.数据库连接和初始化策略.csproj", "{F34E02B2-CC96-4C17-A343-46BD156841B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2.约定", "2.数据库表的创建和迁移\2.2.约定\2.2.约定.csproj", "{92160E93-FECF-4D94-9279-C3142D082D00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F34E02B2-CC96-4C17-A343-46BD156841B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34E02B2-CC96-4C17-A343-46BD156841B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34E02B2-CC96-4C17-A343-46BD156841B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34E02B2-CC96-4C17-A343-46BD156841B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92160E93-FECF-4D94-9279-C3142D082D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92160E93-FECF-4D94-9279-C3142D082D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92160E93-FECF-4D94-9279-C3142D082D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92160E93-FECF-4D94-9279-C3142D082D00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F34E02B2-CC96-4C17-A343-46BD156841B0} = {E4C42A05-9DBB-47B9-A484-28F0165B7DFB}
+		{92160E93-FECF-4D94-9279-C3142D082D00} = {E4C42A05-9DBB-47B9-A484-28F0165B7DFB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3F6647A-61F4-4AD3-B5A3-0BC8B59D9084}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+\obj
+\bin
+/.vs/DotNetCoreSamples/v15/Server/sqlite3
+*.suo
+/.vs/ConsulSample/v15/Server/sqlite3
+/packages/EntityFramework.6.0.0
+/.vs/EFSamples/v15/Server/sqlite3
