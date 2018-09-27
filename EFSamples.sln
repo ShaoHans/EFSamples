@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2.约定", "2.数据库�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.4.属性映射与关系映射", "2.数据库表的创建和迁移\2.4.属性映射与关系映射\2.4.属性映射与关系映射.csproj", "{DD45A5C6-E7B7-4437-9446-BAEAFA85F0D4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.上下文管理与变更追踪原理", "4.上下文管理与变更追踪原理", "{980C1D04-1C2F-43EF-A7FE-57D3923A1B99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.1.上下文非线程安全", "4.上下文管理与变更追踪原理\4.1.上下文非线程安全\4.1.上下文非线程安全.csproj", "{33A05D30-149A-4846-BB8E-56FC4E2F7710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2.变更追踪", "4.上下文管理与变更追踪原理\4.2.变更追踪\4.2.变更追踪.csproj", "{F06E7624-EC44-409B-8573-38C8904AF74B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +35,14 @@ Global
 		{DD45A5C6-E7B7-4437-9446-BAEAFA85F0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD45A5C6-E7B7-4437-9446-BAEAFA85F0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD45A5C6-E7B7-4437-9446-BAEAFA85F0D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33A05D30-149A-4846-BB8E-56FC4E2F7710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A05D30-149A-4846-BB8E-56FC4E2F7710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A05D30-149A-4846-BB8E-56FC4E2F7710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A05D30-149A-4846-BB8E-56FC4E2F7710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F06E7624-EC44-409B-8573-38C8904AF74B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06E7624-EC44-409B-8573-38C8904AF74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06E7624-EC44-409B-8573-38C8904AF74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06E7624-EC44-409B-8573-38C8904AF74B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +51,7 @@ Global
 		{F34E02B2-CC96-4C17-A343-46BD156841B0} = {E4C42A05-9DBB-47B9-A484-28F0165B7DFB}
 		{92160E93-FECF-4D94-9279-C3142D082D00} = {E4C42A05-9DBB-47B9-A484-28F0165B7DFB}
 		{DD45A5C6-E7B7-4437-9446-BAEAFA85F0D4} = {E4C42A05-9DBB-47B9-A484-28F0165B7DFB}
+		{33A05D30-149A-4846-BB8E-56FC4E2F7710} = {980C1D04-1C2F-43EF-A7FE-57D3923A1B99}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3F6647A-61F4-4AD3-B5A3-0BC8B59D9084}
