@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.NetFramework
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.结构化日志输出", "5.日志管理\5.2.结构化日志输出\5.2.结构化日志输出.csproj", "{372570F9-CC87-4044-89E7-B69EB1E264E6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.并发冲突", "6.并发冲突", "{263C1C9B-0D8B-44C6-9E2E-125FD9C5CD72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "并发冲突", "6.并发冲突\并发冲突\并发冲突.csproj", "{35633494-EED0-4638-82FC-01690F3B5B90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +69,10 @@ Global
 		{372570F9-CC87-4044-89E7-B69EB1E264E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{372570F9-CC87-4044-89E7-B69EB1E264E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{372570F9-CC87-4044-89E7-B69EB1E264E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35633494-EED0-4638-82FC-01690F3B5B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35633494-EED0-4638-82FC-01690F3B5B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35633494-EED0-4638-82FC-01690F3B5B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35633494-EED0-4638-82FC-01690F3B5B90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +86,7 @@ Global
 		{830FB106-2374-4C9A-9E4C-4719901BA6D9} = {2303C064-8C74-41C2-B22C-706668362350}
 		{84FC7E63-C324-46D9-9BBF-5CDAA2B49A49} = {5EB3ABAA-415A-4045-8E49-BAE9874014F3}
 		{372570F9-CC87-4044-89E7-B69EB1E264E6} = {2303C064-8C74-41C2-B22C-706668362350}
+		{35633494-EED0-4638-82FC-01690F3B5B90} = {263C1C9B-0D8B-44C6-9E2E-125FD9C5CD72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3F6647A-61F4-4AD3-B5A3-0BC8B59D9084}

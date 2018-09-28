@@ -58,11 +58,13 @@
   <ItemGroup>
     <Compile Include="EfDbContext.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\OrderItem.cs" />
     <Compile Include="Entities\SqlLog.cs" />
     <Compile Include="Interceptors\NLogCommandInterceptor.cs" />
     <Compile Include="Interceptors\PerformanceMonitoringInterceptor.cs" />
+    <Compile Include="Maps\CustomerMap.cs" />
     <Compile Include="Maps\OrderItemMap.cs" />
     <Compile Include="Maps\OrderMap.cs" />
     <Compile Include="Maps\SqlLogMap.cs" />
@@ -73,6 +75,14 @@
     <Compile Include="Migrations\201809280701112_AddSqlLogTable.cs" />
     <Compile Include="Migrations\201809280701112_AddSqlLogTable.Designer.cs">
       <DependentUpon>201809280701112_AddSqlLogTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809280752232_AddCustomerTable.cs" />
+    <Compile Include="Migrations\201809280752232_AddCustomerTable.Designer.cs">
+      <DependentUpon>201809280752232_AddCustomerTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809280756011_AddCustomerNameConcurrencyToken.cs" />
+    <Compile Include="Migrations\201809280756011_AddCustomerNameConcurrencyToken.Designer.cs">
+      <DependentUpon>201809280756011_AddCustomerNameConcurrencyToken.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyDbConfiguration.cs" />
@@ -93,6 +103,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809280701112_AddSqlLogTable.resx">
       <DependentUpon>201809280701112_AddSqlLogTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809280752232_AddCustomerTable.resx">
+      <DependentUpon>201809280752232_AddCustomerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809280756011_AddCustomerNameConcurrencyToken.resx">
+      <DependentUpon>201809280756011_AddCustomerNameConcurrencyToken.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

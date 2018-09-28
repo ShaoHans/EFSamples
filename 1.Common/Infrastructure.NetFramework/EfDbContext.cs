@@ -20,6 +20,8 @@ namespace Infrastructure.NetFramework
 
         public DbSet<SqlLog> SqlLogs { get; set; }
 
+        public DbSet<Customer> Customers { get; set; }
+
         public EfDbContext() : base("name=EfDbConnString")
         {
 
