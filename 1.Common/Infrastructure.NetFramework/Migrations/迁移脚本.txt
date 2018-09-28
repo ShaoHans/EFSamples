@@ -1,0 +1,3 @@
+﻿1.Enable-Migrations
+2.Add-Migration InitDb
+3.Update-Database -ConnectionString "Data Source=.;Initial Catalog=EfDb;Integrated Security=true" -ConnectionProviderName "System.Data.SqlClient" -Script -SourceMigration $InitialDatabase

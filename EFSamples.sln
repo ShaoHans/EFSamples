@@ -17,6 +17,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.1.上下文非线程安�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2.变更追踪", "4.上下文管理与变更追踪原理\4.2.变更追踪\4.2.变更追踪.csproj", "{F06E7624-EC44-409B-8573-38C8904AF74B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.日志管理", "5.日志管理", "{2303C064-8C74-41C2-B22C-706668362350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.1.简单打印SQL", "5.日志管理\5.1.简单打印SQL\5.1.简单打印SQL.csproj", "{830FB106-2374-4C9A-9E4C-4719901BA6D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Common", "1.Common", "{5EB3ABAA-415A-4045-8E49-BAE9874014F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.NetFramework", "1.Common\Infrastructure.NetFramework\Infrastructure.NetFramework.csproj", "{84FC7E63-C324-46D9-9BBF-5CDAA2B49A49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.结构化日志输出", "5.日志管理\5.2.结构化日志输出\5.2.结构化日志输出.csproj", "{372570F9-CC87-4044-89E7-B69EB1E264E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +53,18 @@ Global
 		{F06E7624-EC44-409B-8573-38C8904AF74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F06E7624-EC44-409B-8573-38C8904AF74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F06E7624-EC44-409B-8573-38C8904AF74B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{830FB106-2374-4C9A-9E4C-4719901BA6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{830FB106-2374-4C9A-9E4C-4719901BA6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{830FB106-2374-4C9A-9E4C-4719901BA6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{830FB106-2374-4C9A-9E4C-4719901BA6D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84FC7E63-C324-46D9-9BBF-5CDAA2B49A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84FC7E63-C324-46D9-9BBF-5CDAA2B49A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84FC7E63-C324-46D9-9BBF-5CDAA2B49A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84FC7E63-C324-46D9-9BBF-5CDAA2B49A49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372570F9-CC87-4044-89E7-B69EB1E264E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372570F9-CC87-4044-89E7-B69EB1E264E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372570F9-CC87-4044-89E7-B69EB1E264E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372570F9-CC87-4044-89E7-B69EB1E264E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +74,10 @@ Global
 		{92160E93-FECF-4D94-9279-C3142D082D00} = {E4C42A05-9DBB-47B9-A484-28F0165B7DFB}
 		{DD45A5C6-E7B7-4437-9446-BAEAFA85F0D4} = {E4C42A05-9DBB-47B9-A484-28F0165B7DFB}
 		{33A05D30-149A-4846-BB8E-56FC4E2F7710} = {980C1D04-1C2F-43EF-A7FE-57D3923A1B99}
+		{F06E7624-EC44-409B-8573-38C8904AF74B} = {980C1D04-1C2F-43EF-A7FE-57D3923A1B99}
+		{830FB106-2374-4C9A-9E4C-4719901BA6D9} = {2303C064-8C74-41C2-B22C-706668362350}
+		{84FC7E63-C324-46D9-9BBF-5CDAA2B49A49} = {5EB3ABAA-415A-4045-8E49-BAE9874014F3}
+		{372570F9-CC87-4044-89E7-B69EB1E264E6} = {2303C064-8C74-41C2-B22C-706668362350}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3F6647A-61F4-4AD3-B5A3-0BC8B59D9084}
