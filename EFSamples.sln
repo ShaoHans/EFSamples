@@ -49,6 +49,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9.EFCore数据库表的创�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.1.属性映射", "9.EFCore数据库表的创建和迁移\9.1.属性映射\9.1.属性映射.csproj", "{7CD27216-EB3D-4770-9AF8-DC6AF9BEA5DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.2.关系映射", "9.EFCore数据库表的创建和迁移\9.2.关系映射\9.2.关系映射.csproj", "{86D8897D-BDFD-4C25-8126-73EBB1EFD583}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{7CD27216-EB3D-4770-9AF8-DC6AF9BEA5DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CD27216-EB3D-4770-9AF8-DC6AF9BEA5DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CD27216-EB3D-4770-9AF8-DC6AF9BEA5DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D8897D-BDFD-4C25-8126-73EBB1EFD583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D8897D-BDFD-4C25-8126-73EBB1EFD583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D8897D-BDFD-4C25-8126-73EBB1EFD583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D8897D-BDFD-4C25-8126-73EBB1EFD583}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +146,7 @@ Global
 		{066E7D99-DAE2-4CE1-A936-9026F430ADEB} = {BA11196E-5E60-492A-8FDA-A83A0529FA24}
 		{678CEC4A-B2AA-4DB0-B0A9-B7278FEE1CF4} = {BA11196E-5E60-492A-8FDA-A83A0529FA24}
 		{7CD27216-EB3D-4770-9AF8-DC6AF9BEA5DE} = {97D9DA7B-FC51-4EAC-99EE-B8DE3F7348C0}
+		{86D8897D-BDFD-4C25-8126-73EBB1EFD583} = {97D9DA7B-FC51-4EAC-99EE-B8DE3F7348C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3F6647A-61F4-4AD3-B5A3-0BC8B59D9084}
