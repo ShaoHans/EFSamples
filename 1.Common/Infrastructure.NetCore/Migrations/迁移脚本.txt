@@ -1,0 +1,9 @@
+﻿当EFCore数据库操作定义在某个类库项目中，在类库项目中使用dotnet ef命令来进行数据库迁移
+1.首先通过Nuget安装如下两个包
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Tools.DotNet
+2.打开类库项目所在的目录，在地址栏输入cmd打开cmd命令窗口；或者直接运行cmd命令打开cmd窗口，然后定位到类库项目所在目录
+3.生成迁移类：dotnet ef migrations add Initial
+  执行迁移类代码：dotnet ef database update
+  以上两个步骤就可以生成数据库
+  生成sql脚本：dotnet ef migrations script -o ./Scripts/init.sql
