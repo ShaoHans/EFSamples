@@ -13,7 +13,9 @@ namespace Infrastructure.NetFramework
     {
         public MyDbConfiguration()
         {
-            SetDatabaseInitializer(new DropCreateDatabaseIfModelChanges<EfDbContext>());
+            //SetDatabaseInitializer(new DropCreateDatabaseIfModelChanges<EfDbContext>());
+            //SetDatabaseInitializer<EfDbContext>(null);
+            SetDatabaseInitializer<EfDbContext>(new NullDatabaseInitializer<EfDbContext>());
             DbInterception.Add(new NLogCommandInterceptor());
             DbInterception.Add(new PerformanceMonitoringInterceptor(10));
         }
