@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.2.元数据与内置模�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.3.第三方扩展模型验证", "10.EFCore数据操作\10.3.第三方扩展模型验证\10.3.第三方扩展模型验证.csproj", "{7785627B-32A8-4964-A16A-FCD114A1C091}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.4.EFCore内存数据库", "10.4.EFCore内存数据库\10.4.EFCore内存数据库.csproj", "{8BA0A8FA-5915-4099-AB12-A654DF5AB301}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +153,10 @@ Global
 		{7785627B-32A8-4964-A16A-FCD114A1C091}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7785627B-32A8-4964-A16A-FCD114A1C091}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7785627B-32A8-4964-A16A-FCD114A1C091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA0A8FA-5915-4099-AB12-A654DF5AB301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA0A8FA-5915-4099-AB12-A654DF5AB301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA0A8FA-5915-4099-AB12-A654DF5AB301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA0A8FA-5915-4099-AB12-A654DF5AB301}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -177,6 +183,7 @@ Global
 		{3397F82C-C6E3-4C12-80D1-2CA5002C1219} = {88B12BC2-264F-4C07-8513-85EC6AD1B4A7}
 		{E45D40B5-598C-483D-9A01-FDC793DB0827} = {88B12BC2-264F-4C07-8513-85EC6AD1B4A7}
 		{7785627B-32A8-4964-A16A-FCD114A1C091} = {88B12BC2-264F-4C07-8513-85EC6AD1B4A7}
+		{8BA0A8FA-5915-4099-AB12-A654DF5AB301} = {88B12BC2-264F-4C07-8513-85EC6AD1B4A7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3F6647A-61F4-4AD3-B5A3-0BC8B59D9084}
