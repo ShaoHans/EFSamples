@@ -1,6 +1,7 @@
 ﻿using Infrastructure.NetCore;
 using Infrastructure.NetCore.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -25,7 +26,8 @@ namespace _10._1.数据操作
             //PredicateTest();
             //ThreeLoad();
             //Sql();
-            BatchInsert();
+            //BatchInsert();
+            Like();
             Console.ReadKey();
         }
 
@@ -36,6 +38,8 @@ namespace _10._1.数据操作
 
             // 启用延迟加载，安装Microsoft.EntityFrameworkCore.Proxies包
             builder.UseLazyLoadingProxies();
+            // 若出现客户端查询评估提示，则抛出异常
+            builder.ConfigureWarnings(w => w.Throw(RelationalEventId.QueryClientEvaluationWarning));
             return new EfCoreDbContext(builder.Options);
         }
 
@@ -345,10 +349,60 @@ namespace _10._1.数据操作
 
                 Stopwatch sw = new Stopwatch();
                 sw.Start();
+                dbContext.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+
                 dbContext.Orders.AddRange(orders);
                 dbContext.SaveChanges();
                 sw.Stop();
                 Console.WriteLine($"耗时：{sw.ElapsedMilliseconds}");
+            }
+        }
+
+        static void Like()
+        {
+            using (var dbContext = GetDbContext())
+            {
+                /*
+                 * SELECT [o].[Id], [o].[CreateTime], [o].[OrderNo], [o].[TotalAmount], [o].[UserName]
+                  FROM [Order] AS [o]
+                  WHERE [o].[OrderNo] LIKE 'PM' + '%' AND (LEFT([o].[OrderNo], LEN(N'PM')) = 'PM')
+                 */
+                dbContext.Orders.Where(o => o.OrderNo.StartsWith("PM")).ToList();
+
+                /*
+                 * SELECT [o].[Id], [o].[CreateTime], [o].[OrderNo], [o].[TotalAmount], [o].[UserName]
+                  FROM [Order] AS [o]
+                  WHERE RIGHT([o].[OrderNo], LEN(N'2')) = '2'
+                 */
+                dbContext.Orders.Where(o => o.OrderNo.EndsWith("2")).ToList();
+
+                /*
+                 SELECT [o].[Id], [o].[CreateTime], [o].[OrderNo], [o].[TotalAmount], [o].[UserName]
+                  FROM [Order] AS [o]
+                  WHERE [o].[OrderNo] LIKE '%22'
+                 */
+                dbContext.Orders.Where(o => EF.Functions.Like(o.OrderNo, "%22")).ToList();
+
+                // 定义参数，EF会缓存生成的sql语句，不用每次都翻译成sql
+                string query = "34";
+                dbContext.Orders.Where(o => EF.Functions.Like(o.OrderNo, $"[{query}]%")).ToList();
+
+                // 查询的字段含有特殊符号，需要转义
+                dbContext.Orders.Where(o => EF.Functions.Like(o.OrderNo, @"%\22", @"\")).ToList();
+
+            }
+        }
+
+        static void CompileQuery()
+        {
+            var query = EF.CompileQuery((EfCoreDbContext db, int id) =>
+                 db.Orders.FirstOrDefault(o => o.Id == id)
+            );
+
+            using (var dbContext = GetDbContext())
+            {
+                query(dbContext, 1);
+                query(dbContext, 2);
             }
         }
     }

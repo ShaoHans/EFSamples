@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Infrastructure.NetCore
@@ -36,4 +37,6 @@ namespace Infrastructure.NetCore
             base.OnModelCreating(modelBuilder);
         }
     }
+
+    
 }
