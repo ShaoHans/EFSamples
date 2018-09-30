@@ -51,7 +51,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.1.属性映射", "9.EFCor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.2.关系映射", "9.EFCore数据库表的创建和迁移\9.2.关系映射\9.2.关系映射.csproj", "{86D8897D-BDFD-4C25-8126-73EBB1EFD583}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.NetCore", "1.Common\Infrastructure.NetCore\Infrastructure.NetCore.csproj", "{67DCD20D-CC92-41C7-A139-75BECEB6454C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.NetCore", "1.Common\Infrastructure.NetCore\Infrastructure.NetCore.csproj", "{67DCD20D-CC92-41C7-A139-75BECEB6454C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10.EFCore数据操作", "10.EFCore数据操作", "{88B12BC2-264F-4C07-8513-85EC6AD1B4A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.1.数据操作", "10.EFCore数据操作\10.1.数据操作\10.1.数据操作.csproj", "{3397F82C-C6E3-4C12-80D1-2CA5002C1219}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +135,10 @@ Global
 		{67DCD20D-CC92-41C7-A139-75BECEB6454C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67DCD20D-CC92-41C7-A139-75BECEB6454C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67DCD20D-CC92-41C7-A139-75BECEB6454C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3397F82C-C6E3-4C12-80D1-2CA5002C1219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3397F82C-C6E3-4C12-80D1-2CA5002C1219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3397F82C-C6E3-4C12-80D1-2CA5002C1219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3397F82C-C6E3-4C12-80D1-2CA5002C1219}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,6 +162,7 @@ Global
 		{7CD27216-EB3D-4770-9AF8-DC6AF9BEA5DE} = {97D9DA7B-FC51-4EAC-99EE-B8DE3F7348C0}
 		{86D8897D-BDFD-4C25-8126-73EBB1EFD583} = {97D9DA7B-FC51-4EAC-99EE-B8DE3F7348C0}
 		{67DCD20D-CC92-41C7-A139-75BECEB6454C} = {5EB3ABAA-415A-4045-8E49-BAE9874014F3}
+		{3397F82C-C6E3-4C12-80D1-2CA5002C1219} = {88B12BC2-264F-4C07-8513-85EC6AD1B4A7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3F6647A-61F4-4AD3-B5A3-0BC8B59D9084}
